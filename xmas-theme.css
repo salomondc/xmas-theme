@@ -1,0 +1,225 @@
+/* https://imgur.com/a/6Mormb7 */
+
+:root {
+    --green: #006039;
+ }
+
+.secondary, .checkout-button, .button.checkout, .button.alt, .tnp-submit {
+    background: #b62d27 !important;;
+}
+
+a.button:not(.icon) {
+    color: white !important;
+}
+
+ /* HEADER */
+ 
+ #masthead {
+     background: url(https://i.imgur.com/asyynmx.jpg) no-repeat;
+     background-size: cover;
+ }
+
+.banner-inner.fill {
+    background: url(https://i.imgur.com/asyynmx.jpg) no-repeat;
+     background-size: cover;
+}
+.greenstrip {
+        background: url(https://i.imgur.com/asyynmx.jpg) no-repeat center;
+     background-size: cover;
+}
+ 
+ #masthead * {
+     color: white;
+ }
+ 
+ .nav-dropdown * {
+     color: #333 !important;
+ }
+ 
+ .header-wrapper::before {
+     display: block;
+     pointer-events: none;
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     top: 0;
+     left: 0;
+     content: '';
+     z-index: 99;
+/*      background-image: url(https://i.imgur.com/puRvUpr.png); */
+     background-size: cover;
+     background-position-y: 70%;
+     background-repeat: no-repeat;
+     opacity: .4
+ }
+ 
+ .header-top {
+     background: white;
+ }
+ 
+ .header-top * {
+     color: #333 !important;
+     font-weight: bold !important;;
+ }
+ 
+ .button.primary.is-outline {
+     border-color: white;
+     color: white;
+ }
+ 
+ #logo {
+     position: relative;
+ }
+ 
+ #logo img {
+     opacity: 0
+ }
+ 
+ #logo::before {
+     display: block;
+     position: absolute;
+     pointer-events: none;
+     height: 100%;
+     width: 100%;
+     top: 0;
+     left: 0;
+     content: '';
+     z-index: 99;
+     background-image: url(https://i.imgur.com/t4Kl1MQ.png);
+     background-size: 90%;
+     background-repeat: no-repeat;
+     background-position: center;
+     transition: scale .4s;
+ }
+ .stuck #logo::before {
+     scale: .85;
+ }
+
+.image-icon.cart-icon {
+   position: relative
+}
+
+.image-icon.cart-icon:before {
+  height: 40px;
+  width: 40px;
+    content: '';
+    display: block;
+    background: url(https://i.imgur.com/npqwyGl.png) no-repeat center;
+    background-size: 100%;
+    margin-bottom: 7px;
+}
+
+.image-icon.cart-icon strong {
+      position: absolute;
+    background: none !important;
+    border: none !important;
+    top: -10px;
+    right: -10px;
+    color: #333 !important;;
+    font-weight: bold;
+    padding-left: 2px;
+    scale: .9;
+    border: none;
+    font-size: 15px;
+    transition: scale .3s;
+}
+
+.header-cart-link:hover .image-icon.cart-icon strong {
+    scale:1.1;
+}   
+
+.image-icon.cart-icon strong:hover {
+    background: none;
+}
+
+.image-icon.cart-icon strong:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+    border-radius: 989999px;
+    z-index: -1;
+    transform: translate(1px, -1px) scale(.7);
+}
+ 
+ /* - HEADER - */
+ 
+ 
+ #wrapper {
+     background: #333;
+ }
+ .section-title-main {
+     display: flex !important;;
+     align-items: center !important;
+ }
+ 
+ .section-title-main::before {
+     content:'';
+     display: inline-block;
+     transform: scale(.9);
+     width: 50px;
+     height:50px;
+     background: url(https://i.imgur.com/7ImBTlx.png) no-repeat center ;
+     background-size: contain;
+   
+ }
+ 
+ .section-title-main::after {
+     content:'';
+     display: inline-block;
+     transform:  rotateY(180deg) scale(.9);
+     width: 50px;
+     height:50px;
+     background: url(https://i.imgur.com/7ImBTlx.png) no-repeat center ;
+     background-size: contain;
+   
+ }
+ 
+ /* SNOW */
+
+.livechatzone_agentimg {
+    position: relative;
+    scale: 1.2 /* LOL */
+}
+
+.livechatzone_agentimg::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    background: url(https://i.imgur.com/PtkxjSU.png) no-repeat center;
+    background-size: contain;
+    transform: translate(-10px, -16px) rotateZ(15deg) rotateY(180deg);
+
+}
+ 
+ body::after {
+   content: '';
+   z-index: 99;
+   pointer-events: none;
+   background: none;
+   font-family: Androgyne;
+   filter: brightness(.9);
+   background-image: url('http://build.digitalcraft.co/snow/flake1.png'), 
+   url('http://build.digitalcraft.co/snow/flake2.png'), 
+   url('http://build.digitalcraft.co/snow/flake3.png');
+ 
+   height: 100%;
+   left: 0;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index:1;
+   -webkit-animation: snow 10s linear infinite;
+   -moz-animation: snow 10s linear infinite;
+   -ms-animation: snow 10s linear infinite;
+   animation: snow 10s linear infinite;
+ }
+ @keyframes snow {
+   0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+   50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+   100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+ } 
